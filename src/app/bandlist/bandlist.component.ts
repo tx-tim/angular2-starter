@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Band } from './band.model';
+// import { WikipediaService } from '../wikisearch/wiki.service';
 
 @Component({
     selector: 'as-bandlist',
@@ -11,6 +12,7 @@ export class BandlistComponent {
     private list: Band[];
 
     constructor() {
+        // wikisearch.search();
         this.band = new Band('band1', 'genre1');
         this.list = [
             new Band('BAnd1', 'genre1'),

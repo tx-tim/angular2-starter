@@ -7,6 +7,7 @@ import { NavbarModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { TodolistModule } from './todolist/todolist.module';
 import { BandlistModule } from './bandlist/bandlist.module';
+import { WikisearchModule } from './wikisearch/wiki.module';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { BandlistModule } from './bandlist/bandlist.module';
         HomeModule,
         TodolistModule,
         BandlistModule,
+        WikisearchModule,
         routing
     ],
     providers: [ APP_PROVIDERS, appRoutingProviders ],

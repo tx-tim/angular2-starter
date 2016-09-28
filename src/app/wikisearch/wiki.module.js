@@ -10,27 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 var index_1 = require('./index');
-var wiki_module_1 = require('../wikisearch/wiki.module');
-var BandlistModule = (function () {
-    function BandlistModule() {
+var WikisearchModule = (function () {
+    function WikisearchModule() {
     }
-    BandlistModule = __decorate([
+    WikisearchModule = __decorate([
         core_1.NgModule({
             declarations: [
-                index_1.BandlistComponent
+                index_1.WikisearchComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
-                wiki_module_1.WikisearchModule
+                http_1.JsonpModule
+            ],
+            providers: [
+                index_1.WikiService
             ],
             exports: [
-                index_1.BandlistComponent
+                index_1.WikisearchComponent
             ]
         }), 
         __metadata('design:paramtypes', [])
-    ], BandlistModule);
-    return BandlistModule;
+    ], WikisearchModule);
+    return WikisearchModule;
 }());
-exports.BandlistModule = BandlistModule;
-//# sourceMappingURL=bandlist.module.js.map
+exports.WikisearchModule = WikisearchModule;
+//# sourceMappingURL=wiki.module.js.map

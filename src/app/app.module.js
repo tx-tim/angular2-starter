@@ -16,6 +16,7 @@ var shared_1 = require('./shared');
 var home_module_1 = require('./home/home.module');
 var todolist_module_1 = require('./todolist/todolist.module');
 var bandlist_module_1 = require('./bandlist/bandlist.module');
+var wiki_module_1 = require('./wikisearch/wiki.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,6 +30,7 @@ var AppModule = (function () {
                 home_module_1.HomeModule,
                 todolist_module_1.TodolistModule,
                 bandlist_module_1.BandlistModule,
+                wiki_module_1.WikisearchModule,
                 app_routing_1.routing
             ],
             providers: [app_providers_1.APP_PROVIDERS, app_routing_1.appRoutingProviders],

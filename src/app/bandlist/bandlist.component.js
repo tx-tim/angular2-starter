@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var band_model_1 = require('./band.model');
+// import { WikipediaService } from '../wikisearch/wiki.service';
 var BandlistComponent = (function () {
     function BandlistComponent() {
+        // wikisearch.search();
         this.band = new band_model_1.Band('band1', 'genre1');
         this.list = [
             new band_model_1.Band('BAnd1', 'genre1'),

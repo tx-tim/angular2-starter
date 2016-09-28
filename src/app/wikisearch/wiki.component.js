@@ -9,28 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var index_1 = require('./index');
-var wiki_module_1 = require('../wikisearch/wiki.module');
-var BandlistModule = (function () {
-    function BandlistModule() {
+var wiki_service_1 = require('./wiki.service');
+var WikisearchComponent = (function () {
+    function WikisearchComponent(wikiService) {
+        this.wikiService = wikiService;
     }
-    BandlistModule = __decorate([
-        core_1.NgModule({
-            declarations: [
-                index_1.BandlistComponent
-            ],
-            imports: [
-                platform_browser_1.BrowserModule,
-                wiki_module_1.WikisearchModule
-            ],
-            exports: [
-                index_1.BandlistComponent
-            ]
+    WikisearchComponent.prototype.search = function (term) {
+        var _this = this;
+        this.wikiService.search(term)
+            .then(function (items) { return _this.items = items; });
+    };
+    WikisearchComponent = __decorate([
+        core_1.Component({
+            selector: 'as-wiki',
+            templateUrl: 'app/wikisearch/wiki.html',
+            providers: [wiki_service_1.WikiService]
         }), 
-        __metadata('design:paramtypes', [])
-    ], BandlistModule);
-    return BandlistModule;
+        __metadata('design:paramtypes', [wiki_service_1.WikiService])
+    ], WikisearchComponent);
+    return WikisearchComponent;
 }());
-exports.BandlistModule = BandlistModule;
-//# sourceMappingURL=bandlist.module.js.map
+exports.WikisearchComponent = WikisearchComponent;
+//# sourceMappingURL=wiki.component.js.map
