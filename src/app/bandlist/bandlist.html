@@ -1,0 +1,9 @@
+<h1>Band List html</h1>
+<ul class="list-group">
+    <li *ngFor="let band of (list); let i=index" class="list-group-item">
+        <span>{{band.name}}</span>
+        <span>{{band.genre}}</span>
+    </li>
+</ul>
+
+<input type="text">
