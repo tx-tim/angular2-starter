@@ -17,6 +17,7 @@ var BandlistComponent = (function () {
             new band_model_1.Band('BAnd1', 'genre1'),
             new band_model_1.Band('Band2', 'genre2')
         ];
+        // get the bandlist from an http request
     }
     BandlistComponent = __decorate([
         core_1.Component({

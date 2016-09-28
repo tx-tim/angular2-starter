@@ -16,5 +16,6 @@ export class BandlistComponent {
             new Band('BAnd1', 'genre1'),
             new Band('Band2', 'genre2')
         ];
+        // get the bandlist from an http request
     }
 }
