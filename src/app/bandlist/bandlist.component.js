@@ -16,8 +16,8 @@ var BandlistComponent = (function () {
         // wikisearch.search();
         this.band = new band_model_1.Band('band1', 'genre1');
         this.list = [
-            new band_model_1.Band('BAnd1', 'genre1'),
-            new band_model_1.Band('Band2', 'genre2')
+            new band_model_1.Band('Iron Maiden', ''),
+            new band_model_1.Band('Ufomammut', '')
         ];
         // get the bandlist from an http request
     }

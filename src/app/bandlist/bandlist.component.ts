@@ -15,8 +15,8 @@ export class BandlistComponent {
         // wikisearch.search();
         this.band = new Band('band1', 'genre1');
         this.list = [
-            new Band('BAnd1', 'genre1'),
-            new Band('Band2', 'genre2')
+            new Band('Iron Maiden', ''),
+            new Band('Ufomammut', '')
         ];
         // get the bandlist from an http request
     }
